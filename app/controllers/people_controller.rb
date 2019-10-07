@@ -6,6 +6,7 @@ class PeopleController < ApplicationController
   end
 
   def create
+    raise params.inspect
     Person.create(person_params)
     redirect_to people_path
   end
